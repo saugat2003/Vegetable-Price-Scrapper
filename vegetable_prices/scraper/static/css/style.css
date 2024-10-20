@@ -1,0 +1,95 @@
+/* styles.css */
+
+/* CSS styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/veg_background.png'); /* Replace with your background image path */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main heading styling */
+h1 {
+    text-align: center;
+    position: sticky; /* Makes heading sticky */
+    color: #e90404;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Table container styling */
+.table-container {
+    max-height: 400px; /* Set a max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #000000; /* Optional: add border */
+    background-color: rgba(255, 255, 255, 5); /* More transparent background */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+    
+}
+
+/* Table header styling */
+thead th {
+    background-color: #2d3e50;
+    color: #ffffff;
+    padding: 12px 15px;
+    position: sticky; /* Makes header sticky */
+    top: 0; /* Sticks it to the top */
+    z-index: 10; /* Keeps it above other content */
+}
+
+/* Table body row styling */
+tbody tr {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #e9ecef;
+}
+
+tbody tr:hover {
+    background-color: #88aae2;
+}
+
+tbody td {
+    padding: 12px 15px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #2d3e50; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #1b2838; /* Change color when hovered */
+}
+
+/* Styling for the Average column */
+table tbody td:nth-child(5) {
+    /*font-weight: bold; /* Make text bold */
+    font-size: 20px; /* Increase the font size */
+}
